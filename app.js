@@ -10,45 +10,60 @@ function arraySum(arr) {
 
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
-        return sum;
         }
-    console.log(sum);
+
+    return sum;
 }
 
-arraySum(numbers);
+let total = arraySum(numbers);
+console.log(total);
 
 
 
-function updateSum(num1) {
-    let sum1 = 0;
-    sum1 += num1;
-    console.log(sum1);
+//function updateSum(num1) {
+    
+//    sum1 += num1;
+
+//}
+
+//let total1 = numbers.forEach(updateSum);
+//console.log(total1);
+
+
+function updateSum2(num2) {
+   // let num2 = numbers;
+    let sum2 = 0;
+
+num2.forEach((num2) => {
+    sum2 += num2;
+    });
+
+    return sum2;
 }
 
-updateSum(numbers);
+let total2 = updateSum2(numbers);
 
-
-
-
-//numbers.forEach(updateSum2)
-//numbers.forEach((num2) => {
-//    sum2 += num2;
-//    return sum2;
-//    });
-
-//updateSum2(numbers);
-
-//console.log(sum2);
-
-
-
-//function updateSum2(num) {
-//    return num.forEach((num) => {updateSum(num)});
-//};
+console.log(total2);
 
 
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
+
+const book = [4];
+
+let favBook = {
+    
+    title: "Sphere",
+    author: "Michael Crichton",
+    pages: "371",
+    readCount: "8"
+};
+
+book.info = function () {
+    console.log(`${title} by ${author}, ${pages}, read  ${readCount} times.`);
+  }
+  
+  book.info(favBook);
 
 // Exercise 3 Section
 console.log("EXERCISE 2:\n==========\n");
